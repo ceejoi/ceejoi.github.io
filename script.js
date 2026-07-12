@@ -92,7 +92,7 @@ sendBtn.onclick = async ()=>{
 
     await type("> Sending...");
 
-    await fetch("http://YOUR_PC_IP:5000/send", {
+    await fetch("https://mouse-raw-been-enrollment.trycloudflare.com", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
