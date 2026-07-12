@@ -214,7 +214,11 @@ This project helped me gain practical experience in:
 
 ## Picture of the LCD with a Message
 
+![HeartLink](assets/LCD)
+
 ## Picture of setup
+![HeartLink](assets/Setup)
+
 ---
 
 ## License
