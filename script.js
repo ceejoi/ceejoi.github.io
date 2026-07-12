@@ -92,7 +92,7 @@ sendBtn.onclick = async ()=>{
 
     await type("> Sending...");
 
-    await fetch("https://arkansas-imported-showing-surgery.trycloudflare.com", {
+    await fetch("https://arkansas-imported-showing-surgery.trycloudflare.com/send", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
