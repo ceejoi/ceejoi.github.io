@@ -98,6 +98,7 @@ sendBtn.onclick = async ()=>{
     await sleep(1500);
 
     await type("> Delivered Successfully.");
+    petParty();
 
     await type("> Thank you for making someone's day :)");
 
