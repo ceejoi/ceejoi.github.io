@@ -120,3 +120,20 @@ body::after{
     pointer-events:none;
 
 }
+
+#petContainer{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.pet{
+
+    position:absolute;
+
+    font-size:40px;
+
+    user-select:none;
+
+}
