@@ -208,9 +208,13 @@ This project helped me gain practical experience in:
 
 ---
 
-## Screenshots
+## Screenshot of the Terminal
 
 ![HeartLink](assets/Terminal)
+
+## Picture of the LCD with a Message
+
+## Picture of setup
 ---
 
 ## License
