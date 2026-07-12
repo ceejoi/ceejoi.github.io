@@ -210,8 +210,7 @@ This project helped me gain practical experience in:
 
 ## Screenshots
 
-*Coming soon.*
-
+![HeartLink](assets/Terminal.jpg)
 ---
 
 ## License
