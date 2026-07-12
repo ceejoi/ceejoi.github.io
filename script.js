@@ -106,3 +106,55 @@ sendBtn.onclick = async ()=>{
     sendBtn.disabled=false;
 
 }
+
+function petParty(){
+
+    const container = document.getElementById("petContainer");
+
+    const pets = ["🐱","🐶"];
+
+    for(let i=0;i<8;i++){
+
+        const pet = document.createElement("div");
+
+        pet.className="pet";
+
+        pet.innerHTML=pets[Math.floor(Math.random()*pets.length)];
+
+        let x=Math.random()*window.innerWidth;
+        let y=Math.random()*window.innerHeight;
+
+        let dx=(Math.random()*4)+2;
+        let dy=(Math.random()*4)+2;
+
+        if(Math.random()>0.5) dx*=-1;
+        if(Math.random()>0.5) dy*=-1;
+
+        pet.style.left=x+"px";
+        pet.style.top=y+"px";
+
+        container.appendChild(pet);
+
+        const interval=setInterval(()=>{
+
+            x+=dx;
+            y+=dy;
+
+            if(x<0 || x>window.innerWidth-40) dx*=-1;
+            if(y<0 || y>window.innerHeight-40) dy*=-1;
+
+            pet.style.left=x+"px";
+            pet.style.top=y+"px";
+
+        },16);
+
+        setTimeout(()=>{
+
+            clearInterval(interval);
+            pet.remove();
+
+        },5000);
+
+    }
+
+}
