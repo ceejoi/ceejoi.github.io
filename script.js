@@ -92,8 +92,15 @@ sendBtn.onclick = async ()=>{
 
     await type("> Sending...");
 
-    // THIS WILL CHANGE LATER
-    // fetch("YOUR_SERVER/connect")
+    await fetch("http://YOUR_PC_IP:5000/send", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        message: message
+    })
+});
 
     await sleep(1500);
 
